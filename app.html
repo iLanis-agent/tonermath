@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Toner Math - app</title>
+<style>
+  :root { --accent:#4a3a8c; --ink:#171233; --paper:#f2f0fa; --soft:#e2ddf3; }
+  * { box-sizing:border-box; margin:0; }
+  body { font-family:Georgia, "Times New Roman", serif; background:var(--paper); color:var(--ink); line-height:1.55; }
+  main { max-width:660px; margin:0 auto; }
+  .boundary { background:#fdeaea; border-left:6px solid #b03030; color:#5c1c1c; border-radius:6px; padding:1rem 1.1rem; }
+  .boundary strong { display:block; margin-bottom:.3rem; }
+  body { padding:2rem 1.2rem; }
+  h1 { font-size:1.8rem; color:var(--accent); }
+  .boundary { margin:1rem 0 1.4rem; }
+  .panel { background:var(--soft); border-left:5px solid var(--accent); border-radius:6px; padding:1rem 1.1rem; margin-bottom:1.1rem; }
+  h2 { font-size:1.1rem; margin-bottom:.6rem; }
+  p.note { font-size:.9rem; margin-bottom:.4rem; }
+  label { display:block; font-size:.9rem; margin:.45rem 0 .1rem; }
+  input { width:100%; padding:.45rem .55rem; font-size:1rem; border:1px solid #b3a8dd; border-radius:6px; background:#fff; color:var(--ink); }
+  .row2 { display:grid; grid-template-columns:1fr 1fr; gap:.6rem; }
+  .out { margin-top:.7rem; font-size:.98rem; background:#fff; border:1px dashed #b3a8dd; border-radius:6px; padding:.6rem .7rem; min-height:2.4rem; overflow-wrap:anywhere; }
+  .out.err { border-color:#b03030; color:#8a1f1f; }
+  footer { margin-top:1.8rem; font-size:.85rem; color:#6c639c; }
+  a { color:var(--accent); }
+</style>
+</head>
+<body>
+<main>
+  <h1>Toner Math</h1>
+  <div class="boundary">
+    <strong>Boundary: arithmetic only</strong>
+    This page counts an office print load with multiplication, division and rounding-up: the cartridges the pages take, the days a cartridge lasts, the cost a page, and the minutes the load prints. It uses no named constants. The pages, the cartridge yield, the daily pages, the cartridge price and the print speed are yours to decide and read off your own printer and invoices. It applies the counting as written, so it has not seen your printer, your cartridge or your power bill and does not know whether the cartridge will really reach its yield, the printer will jam or the price will hold, and it gives no verdict that a cartridge is worth its price or a printer is right for you. Every number here is your own entry.
+  </div>
+
+  <div class="panel">
+    <h2>The cartridges truth</h2>
+    <p class="note">Cartridges: the pages divided by the pages a cartridge, rounded up, with what the last cartridge covers.</p>
+    <div class="row2"><div><label for="c-n">Pages</label><input id="c-n" type="text" value="12500"></div><div><label for="c-y">Pages a cartridge</label><input id="c-y" type="text" value="3000"></div></div>
+    <div class="out" id="c-out"></div>
+  </div>
+  <div class="panel">
+    <h2>The days truth</h2>
+    <p class="note">Days: the cartridge yield divided by the pages printed a day, with the pages left for the next day.</p>
+    <div class="row2"><div><label for="d-y">Pages a cartridge</label><input id="d-y" type="text" value="3000"></div><div><label for="d-d">Pages a day</label><input id="d-d" type="text" value="220"></div></div>
+    <div class="out" id="d-out"></div>
+  </div>
+  <div class="panel">
+    <h2>The cost truth</h2>
+    <p class="note">Cost: the cartridges times the cartridge price, to the cent, and spread over the pages.</p>
+    <div class="row2"><div><label for="k-c">Cartridges</label><input id="k-c" type="text" value="5"></div><div><label for="k-p">Cartridge price ($)</label><input id="k-p" type="text" value="89.99"></div></div>
+    <div class="row2"><div><label for="k-n">Pages</label><input id="k-n" type="text" value="12500"></div></div>
+    <div class="out" id="k-out"></div>
+  </div>
+  <div class="panel">
+    <h2>The time truth</h2>
+    <p class="note">Time: the pages divided by the pages a minute, rounded up, in minutes and in hours and minutes.</p>
+    <div class="row2"><div><label for="t-n">Pages</label><input id="t-n" type="text" value="12500"></div><div><label for="t-m">Pages a minute</label><input id="t-m" type="text" value="30"></div></div>
+    <div class="out" id="t-out"></div>
+  </div>
+
+  <footer>Toner Math is exact arithmetic over the numbers you enter. <a href="index.html">Why it exists</a>.</footer>
+</main>
+<script src="engine.js"></script>
+<script>
+  function show(id, fn) {
+    const out = document.getElementById(id);
+    try { out.textContent = fn(); out.classList.remove("err"); }
+    catch (e) { out.textContent = e.message; out.classList.add("err"); }
+  }
+  function recalc() {
+    const v = (id) => document.getElementById(id).value;
+    show("c-out", () => cartridgesTruth(v("c-n"), v("c-y")));
+    show("d-out", () => daysTruth(v("d-y"), v("d-d")));
+    show("k-out", () => costTruth(v("k-c"), v("k-p"), v("k-n")));
+    show("t-out", () => timeTruth(v("t-n"), v("t-m")));
+  }
+  document.querySelectorAll("input").forEach((el) => {
+    el.addEventListener("input", recalc);
+    el.addEventListener("change", recalc);
+  });
+  recalc();
+</script>
+</body>
+</html>
