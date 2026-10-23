@@ -1,0 +1,972 @@
+{
+ "cases": [
+  {
+   "fn": "cartridges",
+   "args": [
+    "12500",
+    "3000"
+   ],
+   "expect": "The 12500 pages at 3000 pages a cartridge make 5 cartridges, the last cartridge covering 500 pages."
+  },
+  {
+   "fn": "days",
+   "args": [
+    "3000",
+    "220"
+   ],
+   "expect": "A 3000 page cartridge at 220 pages a day lasts 13 full days with 140 pages left for the next day."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "5",
+    "89.99",
+    "12500"
+   ],
+   "expect": "The 5 cartridges at $89.99 a cartridge come to $449.95, $0.04 a page."
+  },
+  {
+   "fn": "time",
+   "args": [
+    "12500",
+    "30"
+   ],
+   "expect": "The 12500 pages at 30 pages a minute take 417 minutes, 6 hours 57 minutes."
+  },
+  {
+   "fn": "cartridges",
+   "args": [
+    "1",
+    "1"
+   ],
+   "expect": "The 1 page at 1 page a cartridge makes 1 cartridge, the last cartridge covering 1 page."
+  },
+  {
+   "fn": "cartridges",
+   "args": [
+    "12000",
+    "3000"
+   ],
+   "expect": "The 12000 pages at 3000 pages a cartridge make 4 cartridges, the last cartridge covering 3000 pages."
+  },
+  {
+   "fn": "cartridges",
+   "args": [
+    "1000000",
+    "100000"
+   ],
+   "expect": "The 1000000 pages at 100000 pages a cartridge make 10 cartridges, the last cartridge covering 100000 pages."
+  },
+  {
+   "fn": "days",
+   "args": [
+    "1",
+    "1"
+   ],
+   "expect": "A 1 page cartridge at 1 page a day lasts 1 full day with 0 pages left for the next day."
+  },
+  {
+   "fn": "days",
+   "args": [
+    "220",
+    "220"
+   ],
+   "expect": "A 220 page cartridge at 220 pages a day lasts 1 full day with 0 pages left for the next day."
+  },
+  {
+   "fn": "days",
+   "args": [
+    "100",
+    "220"
+   ],
+   "expect": "A 100 page cartridge at 220 pages a day lasts 0 full days with 100 pages left for the next day."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "1",
+    "0.01",
+    "1"
+   ],
+   "expect": "The 1 cartridge at $0.01 a cartridge comes to $0.01, $0.01 a page."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "10000",
+    "999.99",
+    "1000000"
+   ],
+   "expect": "The 10000 cartridges at $999.99 a cartridge come to $9999900.00, $10.00 a page."
+  },
+  {
+   "fn": "time",
+   "args": [
+    "1",
+    "1"
+   ],
+   "expect": "The 1 page at 1 page a minute takes 1 minute, 0 hours 1 minute."
+  },
+  {
+   "fn": "time",
+   "args": [
+    "60",
+    "1"
+   ],
+   "expect": "The 60 pages at 1 page a minute take 60 minutes, 1 hour 0 minutes."
+  },
+  {
+   "fn": "cartridges",
+   "args": [
+    "509929",
+    "2829"
+   ],
+   "expect": "The 509929 pages at 2829 pages a cartridge make 181 cartridges, the last cartridge covering 709 pages."
+  },
+  {
+   "fn": "cartridges",
+   "args": [
+    "924013",
+    "21478"
+   ],
+   "expect": "The 924013 pages at 21478 pages a cartridge make 44 cartridges, the last cartridge covering 459 pages."
+  },
+  {
+   "fn": "cartridges",
+   "args": [
+    "670344",
+    "56969"
+   ],
+   "expect": "The 670344 pages at 56969 pages a cartridge make 12 cartridges, the last cartridge covering 43685 pages."
+  },
+  {
+   "fn": "cartridges",
+   "args": [
+    "841934",
+    "54938"
+   ],
+   "expect": "The 841934 pages at 54938 pages a cartridge make 16 cartridges, the last cartridge covering 17864 pages."
+  },
+  {
+   "fn": "cartridges",
+   "args": [
+    "20769",
+    "1098"
+   ],
+   "expect": "The 20769 pages at 1098 pages a cartridge make 19 cartridges, the last cartridge covering 1005 pages."
+  },
+  {
+   "fn": "cartridges",
+   "args": [
+    "131224",
+    "90991"
+   ],
+   "expect": "The 131224 pages at 90991 pages a cartridge make 2 cartridges, the last cartridge covering 40233 pages."
+  },
+  {
+   "fn": "cartridges",
+   "args": [
+    "334161",
+    "86399"
+   ],
+   "expect": "The 334161 pages at 86399 pages a cartridge make 4 cartridges, the last cartridge covering 74964 pages."
+  },
+  {
+   "fn": "cartridges",
+   "args": [
+    "929884",
+    "81394"
+   ],
+   "expect": "The 929884 pages at 81394 pages a cartridge make 12 cartridges, the last cartridge covering 34550 pages."
+  },
+  {
+   "fn": "cartridges",
+   "args": [
+    "629877",
+    "65902"
+   ],
+   "expect": "The 629877 pages at 65902 pages a cartridge make 10 cartridges, the last cartridge covering 36759 pages."
+  },
+  {
+   "fn": "cartridges",
+   "args": [
+    "543618",
+    "13168"
+   ],
+   "expect": "The 543618 pages at 13168 pages a cartridge make 42 cartridges, the last cartridge covering 3730 pages."
+  },
+  {
+   "fn": "cartridges",
+   "args": [
+    "597963",
+    "63211"
+   ],
+   "expect": "The 597963 pages at 63211 pages a cartridge make 10 cartridges, the last cartridge covering 29064 pages."
+  },
+  {
+   "fn": "cartridges",
+   "args": [
+    "950577",
+    "12081"
+   ],
+   "expect": "The 950577 pages at 12081 pages a cartridge make 79 cartridges, the last cartridge covering 8259 pages."
+  },
+  {
+   "fn": "cartridges",
+   "args": [
+    "306396",
+    "65456"
+   ],
+   "expect": "The 306396 pages at 65456 pages a cartridge make 5 cartridges, the last cartridge covering 44572 pages."
+  },
+  {
+   "fn": "cartridges",
+   "args": [
+    "937836",
+    "38042"
+   ],
+   "expect": "The 937836 pages at 38042 pages a cartridge make 25 cartridges, the last cartridge covering 24828 pages."
+  },
+  {
+   "fn": "cartridges",
+   "args": [
+    "464600",
+    "25078"
+   ],
+   "expect": "The 464600 pages at 25078 pages a cartridge make 19 cartridges, the last cartridge covering 13196 pages."
+  },
+  {
+   "fn": "cartridges",
+   "args": [
+    "805315",
+    "21252"
+   ],
+   "expect": "The 805315 pages at 21252 pages a cartridge make 38 cartridges, the last cartridge covering 18991 pages."
+  },
+  {
+   "fn": "cartridges",
+   "args": [
+    "316465",
+    "57578"
+   ],
+   "expect": "The 316465 pages at 57578 pages a cartridge make 6 cartridges, the last cartridge covering 28575 pages."
+  },
+  {
+   "fn": "cartridges",
+   "args": [
+    "919093",
+    "48549"
+   ],
+   "expect": "The 919093 pages at 48549 pages a cartridge make 19 cartridges, the last cartridge covering 45211 pages."
+  },
+  {
+   "fn": "cartridges",
+   "args": [
+    "832824",
+    "44330"
+   ],
+   "expect": "The 832824 pages at 44330 pages a cartridge make 19 cartridges, the last cartridge covering 34884 pages."
+  },
+  {
+   "fn": "cartridges",
+   "args": [
+    "711094",
+    "37387"
+   ],
+   "expect": "The 711094 pages at 37387 pages a cartridge make 20 cartridges, the last cartridge covering 741 pages."
+  },
+  {
+   "fn": "days",
+   "args": [
+    "19514",
+    "74217"
+   ],
+   "expect": "A 19514 page cartridge at 74217 pages a day lasts 0 full days with 19514 pages left for the next day."
+  },
+  {
+   "fn": "days",
+   "args": [
+    "10709",
+    "56225"
+   ],
+   "expect": "A 10709 page cartridge at 56225 pages a day lasts 0 full days with 10709 pages left for the next day."
+  },
+  {
+   "fn": "days",
+   "args": [
+    "77384",
+    "96207"
+   ],
+   "expect": "A 77384 page cartridge at 96207 pages a day lasts 0 full days with 77384 pages left for the next day."
+  },
+  {
+   "fn": "days",
+   "args": [
+    "19575",
+    "40998"
+   ],
+   "expect": "A 19575 page cartridge at 40998 pages a day lasts 0 full days with 19575 pages left for the next day."
+  },
+  {
+   "fn": "days",
+   "args": [
+    "15954",
+    "25933"
+   ],
+   "expect": "A 15954 page cartridge at 25933 pages a day lasts 0 full days with 15954 pages left for the next day."
+  },
+  {
+   "fn": "days",
+   "args": [
+    "48114",
+    "83488"
+   ],
+   "expect": "A 48114 page cartridge at 83488 pages a day lasts 0 full days with 48114 pages left for the next day."
+  },
+  {
+   "fn": "days",
+   "args": [
+    "29659",
+    "25167"
+   ],
+   "expect": "A 29659 page cartridge at 25167 pages a day lasts 1 full day with 4492 pages left for the next day."
+  },
+  {
+   "fn": "days",
+   "args": [
+    "44496",
+    "13029"
+   ],
+   "expect": "A 44496 page cartridge at 13029 pages a day lasts 3 full days with 5409 pages left for the next day."
+  },
+  {
+   "fn": "days",
+   "args": [
+    "45887",
+    "67721"
+   ],
+   "expect": "A 45887 page cartridge at 67721 pages a day lasts 0 full days with 45887 pages left for the next day."
+  },
+  {
+   "fn": "days",
+   "args": [
+    "80159",
+    "76525"
+   ],
+   "expect": "A 80159 page cartridge at 76525 pages a day lasts 1 full day with 3634 pages left for the next day."
+  },
+  {
+   "fn": "days",
+   "args": [
+    "4695",
+    "98256"
+   ],
+   "expect": "A 4695 page cartridge at 98256 pages a day lasts 0 full days with 4695 pages left for the next day."
+  },
+  {
+   "fn": "days",
+   "args": [
+    "22477",
+    "48914"
+   ],
+   "expect": "A 22477 page cartridge at 48914 pages a day lasts 0 full days with 22477 pages left for the next day."
+  },
+  {
+   "fn": "days",
+   "args": [
+    "73089",
+    "75657"
+   ],
+   "expect": "A 73089 page cartridge at 75657 pages a day lasts 0 full days with 73089 pages left for the next day."
+  },
+  {
+   "fn": "days",
+   "args": [
+    "46416",
+    "44492"
+   ],
+   "expect": "A 46416 page cartridge at 44492 pages a day lasts 1 full day with 1924 pages left for the next day."
+  },
+  {
+   "fn": "days",
+   "args": [
+    "52233",
+    "33467"
+   ],
+   "expect": "A 52233 page cartridge at 33467 pages a day lasts 1 full day with 18766 pages left for the next day."
+  },
+  {
+   "fn": "days",
+   "args": [
+    "94188",
+    "50216"
+   ],
+   "expect": "A 94188 page cartridge at 50216 pages a day lasts 1 full day with 43972 pages left for the next day."
+  },
+  {
+   "fn": "days",
+   "args": [
+    "31525",
+    "40684"
+   ],
+   "expect": "A 31525 page cartridge at 40684 pages a day lasts 0 full days with 31525 pages left for the next day."
+  },
+  {
+   "fn": "days",
+   "args": [
+    "56030",
+    "97810"
+   ],
+   "expect": "A 56030 page cartridge at 97810 pages a day lasts 0 full days with 56030 pages left for the next day."
+  },
+  {
+   "fn": "days",
+   "args": [
+    "74518",
+    "31374"
+   ],
+   "expect": "A 74518 page cartridge at 31374 pages a day lasts 2 full days with 11770 pages left for the next day."
+  },
+  {
+   "fn": "days",
+   "args": [
+    "73643",
+    "2080"
+   ],
+   "expect": "A 73643 page cartridge at 2080 pages a day lasts 35 full days with 843 pages left for the next day."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "2289",
+    "201.17",
+    "343777"
+   ],
+   "expect": "The 2289 cartridges at $201.17 a cartridge come to $460478.13, $1.34 a page."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "4022",
+    "25.69",
+    "370227"
+   ],
+   "expect": "The 4022 cartridges at $25.69 a cartridge come to $103325.18, $0.28 a page."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "586",
+    "786.54",
+    "299339"
+   ],
+   "expect": "The 586 cartridges at $786.54 a cartridge come to $460912.44, $1.54 a page."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "454",
+    "586.11",
+    "784282"
+   ],
+   "expect": "The 454 cartridges at $586.11 a cartridge come to $266093.94, $0.34 a page."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "8130",
+    "403.19",
+    "776863"
+   ],
+   "expect": "The 8130 cartridges at $403.19 a cartridge come to $3277934.70, $4.22 a page."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "5457",
+    "369.66",
+    "558204"
+   ],
+   "expect": "The 5457 cartridges at $369.66 a cartridge come to $2017234.62, $3.61 a page."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "9418",
+    "869.4",
+    "985890"
+   ],
+   "expect": "The 9418 cartridges at $869.40 a cartridge come to $8188009.20, $8.31 a page."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "8421",
+    "674.11",
+    "342133"
+   ],
+   "expect": "The 8421 cartridges at $674.11 a cartridge come to $5676680.31, $16.59 a page."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "7907",
+    "843.21",
+    "371857"
+   ],
+   "expect": "The 7907 cartridges at $843.21 a cartridge come to $6667261.47, $17.93 a page."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "6867",
+    "20.31",
+    "529859"
+   ],
+   "expect": "The 6867 cartridges at $20.31 a cartridge come to $139468.77, $0.26 a page."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "9947",
+    "473.14",
+    "906691"
+   ],
+   "expect": "The 9947 cartridges at $473.14 a cartridge come to $4706323.58, $5.19 a page."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "7051",
+    "765.95",
+    "730470"
+   ],
+   "expect": "The 7051 cartridges at $765.95 a cartridge come to $5400713.45, $7.39 a page."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "8790",
+    "513.31",
+    "353127"
+   ],
+   "expect": "The 8790 cartridges at $513.31 a cartridge come to $4511994.90, $12.78 a page."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "67",
+    "697.91",
+    "296256"
+   ],
+   "expect": "The 67 cartridges at $697.91 a cartridge come to $46759.97, $0.16 a page."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "8850",
+    "87.39",
+    "892702"
+   ],
+   "expect": "The 8850 cartridges at $87.39 a cartridge come to $773401.50, $0.87 a page."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "3735",
+    "16.81",
+    "923204"
+   ],
+   "expect": "The 3735 cartridges at $16.81 a cartridge come to $62785.35, $0.07 a page."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "4612",
+    "831.8",
+    "22151"
+   ],
+   "expect": "The 4612 cartridges at $831.80 a cartridge come to $3836261.60, $173.19 a page."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "2646",
+    "387.91",
+    "566738"
+   ],
+   "expect": "The 2646 cartridges at $387.91 a cartridge come to $1026409.86, $1.81 a page."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "8263",
+    "350.5",
+    "80957"
+   ],
+   "expect": "The 8263 cartridges at $350.50 a cartridge come to $2896181.50, $35.77 a page."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "7280",
+    "311.91",
+    "716418"
+   ],
+   "expect": "The 7280 cartridges at $311.91 a cartridge come to $2270704.80, $3.17 a page."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "5289",
+    "303.44",
+    "61440"
+   ],
+   "expect": "The 5289 cartridges at $303.44 a cartridge come to $1604894.16, $26.12 a page."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "4292",
+    "921.05",
+    "127809"
+   ],
+   "expect": "The 4292 cartridges at $921.05 a cartridge come to $3953146.60, $30.93 a page."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "1050",
+    "125.59",
+    "671604"
+   ],
+   "expect": "The 1050 cartridges at $125.59 a cartridge come to $131869.50, $0.20 a page."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "3687",
+    "461.38",
+    "145345"
+   ],
+   "expect": "The 3687 cartridges at $461.38 a cartridge come to $1701108.06, $11.70 a page."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "9283",
+    "700.88",
+    "22296"
+   ],
+   "expect": "The 9283 cartridges at $700.88 a cartridge come to $6506269.04, $291.81 a page."
+  },
+  {
+   "fn": "time",
+   "args": [
+    "762163",
+    "845"
+   ],
+   "expect": "The 762163 pages at 845 pages a minute take 902 minutes, 15 hours 2 minutes."
+  },
+  {
+   "fn": "time",
+   "args": [
+    "577789",
+    "960"
+   ],
+   "expect": "The 577789 pages at 960 pages a minute take 602 minutes, 10 hours 2 minutes."
+  },
+  {
+   "fn": "time",
+   "args": [
+    "426083",
+    "434"
+   ],
+   "expect": "The 426083 pages at 434 pages a minute take 982 minutes, 16 hours 22 minutes."
+  },
+  {
+   "fn": "time",
+   "args": [
+    "579583",
+    "886"
+   ],
+   "expect": "The 579583 pages at 886 pages a minute take 655 minutes, 10 hours 55 minutes."
+  },
+  {
+   "fn": "time",
+   "args": [
+    "791860",
+    "203"
+   ],
+   "expect": "The 791860 pages at 203 pages a minute take 3901 minutes, 65 hours 1 minute."
+  },
+  {
+   "fn": "time",
+   "args": [
+    "936043",
+    "505"
+   ],
+   "expect": "The 936043 pages at 505 pages a minute take 1854 minutes, 30 hours 54 minutes."
+  },
+  {
+   "fn": "time",
+   "args": [
+    "941960",
+    "363"
+   ],
+   "expect": "The 941960 pages at 363 pages a minute take 2595 minutes, 43 hours 15 minutes."
+  },
+  {
+   "fn": "time",
+   "args": [
+    "476565",
+    "773"
+   ],
+   "expect": "The 476565 pages at 773 pages a minute take 617 minutes, 10 hours 17 minutes."
+  },
+  {
+   "fn": "time",
+   "args": [
+    "145338",
+    "710"
+   ],
+   "expect": "The 145338 pages at 710 pages a minute take 205 minutes, 3 hours 25 minutes."
+  },
+  {
+   "fn": "time",
+   "args": [
+    "633997",
+    "293"
+   ],
+   "expect": "The 633997 pages at 293 pages a minute take 2164 minutes, 36 hours 4 minutes."
+  },
+  {
+   "fn": "time",
+   "args": [
+    "643823",
+    "234"
+   ],
+   "expect": "The 643823 pages at 234 pages a minute take 2752 minutes, 45 hours 52 minutes."
+  },
+  {
+   "fn": "time",
+   "args": [
+    "951023",
+    "364"
+   ],
+   "expect": "The 951023 pages at 364 pages a minute take 2613 minutes, 43 hours 33 minutes."
+  },
+  {
+   "fn": "time",
+   "args": [
+    "638483",
+    "686"
+   ],
+   "expect": "The 638483 pages at 686 pages a minute take 931 minutes, 15 hours 31 minutes."
+  },
+  {
+   "fn": "time",
+   "args": [
+    "338210",
+    "353"
+   ],
+   "expect": "The 338210 pages at 353 pages a minute take 959 minutes, 15 hours 59 minutes."
+  },
+  {
+   "fn": "time",
+   "args": [
+    "569175",
+    "644"
+   ],
+   "expect": "The 569175 pages at 644 pages a minute take 884 minutes, 14 hours 44 minutes."
+  },
+  {
+   "fn": "time",
+   "args": [
+    "502343",
+    "311"
+   ],
+   "expect": "The 502343 pages at 311 pages a minute take 1616 minutes, 26 hours 56 minutes."
+  },
+  {
+   "fn": "time",
+   "args": [
+    "51917",
+    "388"
+   ],
+   "expect": "The 51917 pages at 388 pages a minute take 134 minutes, 2 hours 14 minutes."
+  },
+  {
+   "fn": "time",
+   "args": [
+    "455105",
+    "900"
+   ],
+   "expect": "The 455105 pages at 900 pages a minute take 506 minutes, 8 hours 26 minutes."
+  },
+  {
+   "fn": "time",
+   "args": [
+    "376650",
+    "618"
+   ],
+   "expect": "The 376650 pages at 618 pages a minute take 610 minutes, 10 hours 10 minutes."
+  },
+  {
+   "fn": "time",
+   "args": [
+    "954214",
+    "842"
+   ],
+   "expect": "The 954214 pages at 842 pages a minute take 1134 minutes, 18 hours 54 minutes."
+  }
+ ],
+ "errors": [
+  [
+   "cartridges",
+   [
+    "0",
+    "3000"
+   ]
+  ],
+  [
+   "cartridges",
+   [
+    "1000001",
+    "3000"
+   ]
+  ],
+  [
+   "cartridges",
+   [
+    "2.5",
+    "3000"
+   ]
+  ],
+  [
+   "cartridges",
+   [
+    "12500",
+    "0"
+   ]
+  ],
+  [
+   "cartridges",
+   [
+    "12500",
+    "100001"
+   ]
+  ],
+  [
+   "cartridges",
+   [
+    "12500",
+    "x"
+   ]
+  ],
+  [
+   "days",
+   [
+    "0",
+    "220"
+   ]
+  ],
+  [
+   "days",
+   [
+    "3000",
+    "0"
+   ]
+  ],
+  [
+   "days",
+   [
+    "3000",
+    "100001"
+   ]
+  ],
+  [
+   "days",
+   [
+    "3000",
+    "1.5"
+   ]
+  ],
+  [
+   "cost",
+   [
+    "0",
+    "89.99",
+    "12500"
+   ]
+  ],
+  [
+   "cost",
+   [
+    "10001",
+    "89.99",
+    "12500"
+   ]
+  ],
+  [
+   "cost",
+   [
+    "5",
+    "0",
+    "12500"
+   ]
+  ],
+  [
+   "cost",
+   [
+    "5",
+    "1000",
+    "12500"
+   ]
+  ],
+  [
+   "cost",
+   [
+    "5",
+    "89.995",
+    "12500"
+   ]
+  ],
+  [
+   "cost",
+   [
+    "5",
+    "89.99",
+    "0"
+   ]
+  ],
+  [
+   "time",
+   [
+    "0",
+    "30"
+   ]
+  ],
+  [
+   "time",
+   [
+    "12500",
+    "0"
+   ]
+  ],
+  [
+   "time",
+   [
+    "12500",
+    "1001"
+   ]
+  ],
+  [
+   "time",
+   [
+    "12500",
+    "30.5"
+   ]
+  ]
+ ]
+}
